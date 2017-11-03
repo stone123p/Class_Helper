@@ -1,0 +1,29 @@
+.top_navbar_div{
+  height:40px;
+  background-color:rgb(130,200,130)
+}
+.w3-button:hover {
+  color: #000 !important;
+  background-color: #ccc !important
+}
+.w3-button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color:rgb(255,255,255);
+  background-color: rgb(112,182,107);
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  float:right;
+  height:40px;
+  
+}
+#logout_button{
+}
+#setting_button{
+}

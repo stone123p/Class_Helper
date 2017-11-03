@@ -1,0 +1,26 @@
+.list{
+  width:780px;
+}
+.title{
+  width:200px;
+  float:left;
+  text-align:left;
+  display: inline
+  
+}
+.content{
+  width:500px;
+  float:left;
+  text-align:left;
+  display: inline
+}
+.w3-ul{
+  list-style-type:none;
+  padding:0;
+  margin:0
+}
+.w3-ul li{
+  padding:8px 16px;
+  border-bottom:1px solid #ddd
+}
+.w3-ul li:last-child{border-bottom:none}

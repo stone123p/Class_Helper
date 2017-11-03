@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Class Helper</title>
+    <link rel="stylesheet" type="text/css" href="./style/profile.css">
+  </head>
+  <body>
+    <div class="top_navbar">
+      <div id="top_navba_app"></div>
+      <script src="./js/top_navbar.js"></script>
+    </div>
+    <div class="main">
+      <div id="list_of_groups">
+      </div>
+      <div id="content">
+        <div id="content_app"></div>
+        <script id="insert_app"></script>
+        <script>
+          var getState=function(){
+            return window.location.search.substr(1).split("&").filter(function(s){return s.split("=")[0]=="state"})[0].split("=")[1];
+          }
+          var getSrcOfAppOfContent=function(){
+            return  "./js/"+getState()+".js";
+          }
+          document.getElementById("insert_app").src=getSrcOfAppOfContent();
+
+        </script>
+      </div>
+    </div>
+    <script>
+      window.data=<%=data%>;
+    </script>
+  </body>
+</html>

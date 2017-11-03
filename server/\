@@ -1,0 +1,19 @@
+var express=require('express');
+var DataOfStuden = require('./public/data/DataOfStuden.js');
+
+var app=express();
+var port = process.env.PORT || 3000;
+
+app.use(express.static(__dirname + '/public'));
+app.get('/login/:id/:key',function(req,res){
+  var name=DataOfStuden.filter(function(data){
+    return (
+      data.studentNumber==req.params.id 
+      && data.password==req.params.key
+      );
+  });
+  res.send(name);
+  res.end;
+});
+app.listen(port);
+console.log('Running server on port:' + port);

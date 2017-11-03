@@ -1,0 +1,21 @@
+body{
+  background-color:rgb(237,241,237);
+  margin-top:0;
+  margin-right:0;
+  margin-bottom:0;
+  margin-left:0;
+}
+.top_navbar{
+  height:39px;
+  width:100%; 
+}
+#list_of_groups{
+  height:500px;
+  width:25%;
+  float:left;
+}
+#content{
+  height:500px;
+  width:75%;
+  float:left;
+}
